@@ -1,0 +1,42 @@
+/* First, modify any default values on root element */
+:root{
+    --bs-primary: #C78C06;
+    --bs-primary-rgb: 199, 140, 6;
+    --bs-secondary: #FFE6AC;
+    --bs-secondary-rgb: 255, 230, 172;
+  }
+  /* Second, select the specific elements and modify their variables */
+  .btn-primary{
+    --bs-btn-bg: #BA59B0;
+    --bs-btn-hover-bg: #803c79;
+    --bs-btn-hover-border-color:#803c79;
+  }
+  /* Third, select the element and update the property directly */
+  .btn-primary{
+    border-color: var(--bs-primary);
+  }
+  
+  
+  /* -------------------------
+      Three Star Media Styles
+  ----------------------------*/
+  .banner{
+    background: var(--bs-dark) url(../images/main-banner.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  .btn-outline-primary {
+    --bs-btn-color: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: var(--bs-dark);
+    --bs-btn-hover-bg: var(--bs-primary);
+    --bs-btn-hover-border-color: var(--bs-primary);
+    --bs-btn-active-color: var(--bs-dark);
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: var(--bs-primary);
+    --bs-btn-disabled-color: var(--bs-primary);
+  }
+  .btn-primary{
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-hover-bg: var(--bs-primary);
+    --bs-btn-hover-border-color:var(--bs-primary);
+  }
